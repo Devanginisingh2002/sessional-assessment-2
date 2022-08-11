@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="./blog.css">
+    <title>Blog Form</title>
+    
 </head>
 <body>
-    <h2>Contact Page</h2>
+    <h2>Blackhost: Blog Form</h2>
     <form action="backend.php">
+        <label for="Title Name: "> Title </label><br>
+        <div>
+            <input type="text" name="Title" id="title" placeholder="Enter title of your blog">
+        </div>
+        <br>
+        <div>
         <label for="First Name: "> First Name: </label><br>
         <div>
             <input type="text" name="FirstName" id="name" placeholder="Enter your First name">
@@ -20,7 +27,17 @@
             <input type="text" name="Last Name" id="name" placeholder="Enter your last name">
         </div>
         <br>
-     
+        <header>
+            <div>
+            <!-- With the help of "name", backend will recognise the data -->
+            Email: <input type="email" name="myEmail" placeholder="Enter your Email"><br>
+        </div>
+        <br>
+        <div>
+            Password: <input type="Password" name="Enter your password"placeholder="Enter your password">
+        </div>
+        </header>
+        <br>
         <div>
             <label for="Gender">Gender: </label>
             <select name="Gender" id="Gender">
@@ -31,21 +48,13 @@
         </div>
         <br>
         <div>
-            Contact Regarding <br><textarea name="myText" cols="40" rows="5"></textarea>
+            Content of the Blog: <br><textarea name="myText" cols="40" rows="5"></textarea>
         </div>
         <br>
-        <div>
-           <input type="checkbox" name="myELgibility" checked> I agree with the terms & conditions 
-        </div>
-        <h4> If You Want to Upload Your Problem, as an form of Application</h4>
-        <label for="myfile">Select a file: </label>
-        <input type="file" id="myfile" name="myfile">
-        <br><br>
         
             <input type="submit" value="Submit " style="background-color: grey" >
         </div>
         
     </form>
-    
 </body>
 </html>
