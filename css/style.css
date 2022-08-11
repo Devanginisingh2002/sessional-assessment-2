@@ -3,22 +3,24 @@
   padding: 0; 
 }
 
+
 .navigation {
-  margin-top: 25px;
-  font-family: var(--font1);
-  /* height: 74px;  */
+  margin-top: 20px;
   display: flex;
+  font-family: var(--font1);
   justify-content: space-between;
   align-items: center;
+  align-self: auto;
 }
 
 .nav-left {
   display: flex;
+  align-self: auto;  
 }
 
 .nav-left span {
-  font-size: 35px;
   padding-top: 10px;
+  font-size: 40px;
 }
 
 .nav-left ul {
@@ -31,26 +33,27 @@
 
 .nav-left ul li {
   list-style: none;
-  margin: 0 14px;
+  margin: 0 15px;
   font-family: var(--font2);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-left ul li a {
-  text-decoration: none;
+  text-decoration: rosybrown;
   color: black;
 }
 
 .nav-left ul li a:hover {
-  color: var(--main-bg-color);
   font-weight: bolder;
+  color: var(--main-bg-color);
 }
 
 .content {
-  height: 100%;
+
   display: flex;
-  margin-top: 32px;
-  padding: 9px;
+  height: 100%;
+  margin-top: 33px;
+  padding: 10px;
   position: relative;
 }
 
